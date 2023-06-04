@@ -1,0 +1,61 @@
+body {
+  position: relative;
+  height: 100vh;
+}
+
+#mainBlock {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+  border: 1px solid rgb(164, 164, 164);
+  padding: 20px;
+  background-color: rgb(73, 159, 73);
+}
+#mainBlockUp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+}
+#mainBlockUp .block:nth-child(1),
+#mainBlockUp .block:nth-child(2),
+#mainBlockUp .block:nth-child(3),
+#mainDiv {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  border: 1px solid rgb(164, 164, 164);
+}
+#green {
+  background-color: greenyellow;
+}
+#orange {
+  background-color: orange;
+}
+#coral {
+  background-color: coral;
+}
+#mainDiv {
+  background-color: gray;
+}
+
+.tasks-block {
+  position: absolute;
+  z-index: 3;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tasks-block a {
+  color: rgb(58, 58, 58);
+  text-decoration: none;
+}
+.tasks-block a:hover {
+  text-decoration: underline;
+}
